@@ -14,6 +14,9 @@ class PagesController < ApplicationController
     def commercial
     end
 
+    def intervention
+    end
+
     def quote
     end
 

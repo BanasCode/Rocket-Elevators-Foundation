@@ -29,6 +29,7 @@ Rails.application.routes.draw do
   root to: 'pages#index'
   get "residential", to: "pages#residential"
   get "commercial", to: "pages#commercial"
+  get "interventions", to: "interventions#new"
   get "quote", to: "quotes#new"
   get "index", to: "pages#index"
   post "lead", to: "lead#create"
@@ -42,6 +43,7 @@ Rails.application.routes.draw do
  # get "portfolio", to: "pages#portfolio"
 
   resources :quotes
+  resources :interventions
   
 end
 # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

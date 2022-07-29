@@ -19,4 +19,5 @@
 //= require activestorage
 //= require turbolinks
 //= require quote
+//= require interventions
 //= require_tree .
