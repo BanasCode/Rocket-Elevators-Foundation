@@ -35,6 +35,7 @@ Rails.application.routes.draw do
   post "lead", to: "lead#create"
   get "login", to: "pages#login"
   get 'users/:id' => 'users#show'
+
   # get "gmaps", to: 'rails_admin#main#google'
   # get 'google', to: "pages#google"
 
@@ -45,5 +46,44 @@ Rails.application.routes.draw do
   resources :quotes
   resources :interventions
   
+  resources :customer do
+    collection do
+      get :search
+    end
+  end
+
+  resources :employee do 
+    collection do 
+      get :search
+    end
+  end
+
+  resources :building do 
+    collection do 
+      get :search
+    end
+  end
+
+  resources :battery do 
+    collection do 
+      get :search
+    end
+  end
+
+  resources :column do 
+    collection do 
+      get :search
+    end
+  end
+
+  resources :elevator do 
+    collection do 
+      get :search
+    end
+  end
+
+
+
+
 end
 # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
