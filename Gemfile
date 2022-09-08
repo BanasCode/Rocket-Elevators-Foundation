@@ -51,6 +51,7 @@ group :development do
   #DEPLOYMENT
   gem 'capistrano', '~> 3.10', require: false
   gem 'capistrano-rbenv', '~> 2.2'
+  gem 'capistrano-rvm',     require: false
   gem 'capistrano-rails', '~> 1.4', require: false
   gem 'capistrano-bundler', '>= 1.1.0'
   gem 'capistrano3-puma', github: "seuros/capistrano-puma"
